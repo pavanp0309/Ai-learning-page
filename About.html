@@ -9,7 +9,23 @@
           rgba(9, 9, 10, 1) 68%,
           rgb(27, 9, 80) 98%
         );
-      }</style>
+      }
+      
+      /* Logo Animation */
+
+    .animated-logo {
+    animation: spin 3s linear infinite;
+    }
+
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+      </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
@@ -17,10 +33,123 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-slate-950 text-white">
+
+<!-- Home Section Start... -->
+<section class="">
+    <div class="container-fluid mx-auto flex justify-around items-center py-5">
+        <!-- Logo Part -->
+        <div class="flex justify-center items-center gap-2">
+            <img src="images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+            <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+        </div>
+        <!-- Nav Menu -->
+        <div class="lg:block hidden">
+            <nav>
+                <ul
+                    class="border-[1px] border-secondaryColor py-2 rounded-full flex px-6 gap-5 text-[1.2rem] font-bold text-primaryColor">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Buttons -->
+        <div class="text-[1.2rem] font-bold lg:block hidden">
+            <div class="flex gap-2">
+                <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                    Login / Sign Up
+                </button>
+                <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div id="hamburger-icon" class="text-4xl font-bold lg:hidden md:block text-secondaryColor">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Small Screen Responsive Navbar -->
+    <div id="mobile-nav" class="hidden flex flex-col justify-center items-center">
+        <!-- Mobile Screen Nav Menu -->
+        <nav>
+            <ul
+                class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-primaryColor">
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Screen Buttons -->
+        <div class="text-[1.2rem] font-bold">
+            <div class="flex gap-4">
+                <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                    Login / Sign Up
+                </button>
+                <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Section End... -->    
     
 <!-- Main Section 1: About AI -->
 <section class="w-full flex justify-center items-center py-10 sec-bg">
-    <div class="m-5 text-center">
+    <div class="m-5 text-center shadow-lg shadow-sky-300 p-5">
         <p class="text-red-500 text-xl font-semibold mb-3">About AI</p>
         <p class="font-bold text-5xl  mb-3 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-300">A Magical Tool For <br>Seamless Collaboration</p>
         <p class="text-pink-400">Mastering the Art of AI Tool: Unleashing the Power of Automated Creativity with AIMug</p>
@@ -30,7 +159,7 @@
 
 <!-- Section 2: Features & Image -->
 <section class="flex justify-center items-center m-3">
-    <div class="md:flex flex-row justify-center items-center mx-5 py-7 border-2 border-sky-400 rounded-lg shadow-lg  ">
+    <div class="md:flex flex-row justify-center items-center mx-5 py-7 border-2 border-sky-400 rounded-lg shadow-lg shadow-sky-300 ">
         
         <!-- Left Features and Reviews -->
         <div class="text-start  text-3xl m-5 w-full md:w-[600px]">
@@ -71,8 +200,8 @@
 
 <!-- section 3 start: teams and agencies -->
 <section class="sec-bg">
-    <div>
-        <p class="font-bold  text-xl text-center m-5 pt-5">Trusted by <span class="text-blue-700">10.8k+</span> teams,agencies and freelancers.</p>
+    <div class=" shadow-sm shadow-sky-300  rounded-xl">
+        <p class="font-bold  text-xl text-center m-5 pt-5  pb-3">Trusted by <span class="text-blue-700">10.8k+</span> teams,agencies and freelancers.</p>
         <div class=" flex justify-center">
             <div class="">
                 <ul class="flex flex-wrap  gap-5 md:text-2xl font-semibold my-4 p-4 justify-center">
@@ -96,38 +225,38 @@
     </div>
     <!-- vidio  -->
     <div class="w-full flex justify-center my-6">
-        <div class="w-[70%] border-2 border-sky-600 rounded-lg p-4 shadow-xl">
+        <div class="w-[70%]  shadow-sky-300 rounded-lg  shadow-lg">
             <video src="images/1103464_1080p_4k_3840x2160.mp4"type="video/mp4" autoplay muted loop></video>
         </div>
     </div>
 </section>
- <!-- Section 3 end -->
+ <!-- Section 3 end : teams and agencies   -->
 
-  <!--section 4 start : Team members  -->
+  <!--section 4 start : Team members info -->
 <section>
       <div>
         <!-- heading -->
           <div class="m-5 p-5">
-              <p class=" font-bold text-4xl text-center">Meet Our Dynamic Team Member,<br>Who Are  Really Care About</p>
+              <p class=" font-bold text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-green-400 ">Meet Our Dynamic Team Member,<br>Who Are  Really Care About</p>
           </div>
       </div>
         <!-- All tem members info -->
       <div class="flex-row w-full ">
-        <div class="px-10">
+        <div class="px-10 ">
             <ul class="flex-row md:flex px-10 py-3 justify-center gap-5 w-[max-100px] h-[max-100px] rounded-lg">
-                <li class=""><img src="images/m1.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m1.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Brooklyn Simmons</p>
                     <p class=" text-center pb-2">Digital Marketers</p>
                 </li>
-                <li class=""><img src="images/m2.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m2.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Ralph Edwards</p>
                     <p class=" text-center pb-2">Marketing Coordinator</p>
                 </li>
-                <li class=""><img src="images/m3.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m3.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Leslie Alexander</p>
                     <p class=" text-center pb-2">Product Designer</p>
                 </li>
-                <li class=""><img src="images/m4.jpg" alt="">
+                <li class=" hover:shadow-lg hover:shadow-sky-300"><img src="images/m4.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Jone Cooper</p>
                     <p class=" text-center pb-2">Web Desingner</p> 
                 </li>
@@ -136,19 +265,19 @@
         </div>
         <div class="px-10">
             <ul class="flex-row md:flex px-10 py-3 justify-center gap-5  w-[max-100px] h-[max-100px] rounded-lg">
-                <li class=""><img src="images/m5.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m5.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Jacob Jones</p>
                     <p class=" text-center pb-2">Softwere Engineer</p>
                 </li>
-                <li class=""><img src="images/m6.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m6.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Darrell Steward</p>
                     <p class=" text-center pb-2">President of Sales</p>
                 </li>
-                <li class=""><img src="images/m7.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m7.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Courtney Henry</p>
                     <p class=" text-center pb-2">Lead Devloper</p>
                 </li>
-                <li class=""><img src="images/m8.jpg" alt="">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="images/m8.jpg" alt="">
                     <p class=" text-center font-bold text-lg px-2 pt-2">Albert Flores</p>
                     <p class=" text-center pb-2">Digital Creator</p>
                 </li>
@@ -156,7 +285,7 @@
         </div>
       </div>
 </section>
-  <!-- section 4 end -->
+  <!-- section 4 end  Team members info-->
 
   <!-- section 5 start -->
   <section class="sec-bg">
@@ -168,12 +297,11 @@
     </div>
       <!-- All tem members info -->
     <div class="flex-row w-full ">
+         <!-- All Cards -->
       <div class="px-10 mx-10">
-         <!-- <ul class="flex-row md:flex px-10 py-3 justify-center gap-3 w-[max-100px] h-[max-100px] ">
-            
-            <!-- Card one -->
-            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-              <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+            <ul class="grid grid-col-12 sm:grid-cols-2 md:grid-cols-4 gap-2">
+                <!-- Card one -->
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
                 <div class="flex items-center">
                     <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m1.jpg" alt=""></p>
                     <div>
@@ -192,7 +320,7 @@
               </li>
                
               <!-- Card two -->
-              <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
                 <div class="flex items-center">
                     <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m2.jpg" alt=""></p>
                     <div>
@@ -211,7 +339,7 @@
               </li>
 
                <!-- Card three -->
-              <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
                 <div class="flex items-center">
                     <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m3.jpg" alt=""></p>
                     <div>
@@ -230,7 +358,7 @@
               </li>
 
               <!-- Card four -->
-              <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
                 <div class="flex items-center">
                     <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m4.jpg" alt=""></p>
                     <div>
@@ -253,10 +381,9 @@
 
       
       <div class="px-10 mx-10">
-        <!-- <ul class="flex-row md:flex px-10 py-3 justify-center gap-4 w-[max-100px] h-[max-100px] ">
-          <!-- Card five -->
            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-            <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+            <!-- Card five -->
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
               <div class="flex items-center">
                   <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m5.jpg" alt=""></p>
                   <div>
@@ -275,7 +402,7 @@
             </li>
              
             <!-- Card six -->
-            <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
               <div class="flex items-center">
                   <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m6.jpg" alt=""></p>
                   <div>
@@ -294,7 +421,7 @@
             </li>
 
              <!-- Card seven -->
-            <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
               <div class="flex items-center">
                   <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m7.jpg" alt=""></p>
                   <div>
@@ -313,7 +440,7 @@
             </li>
 
             <!-- Card eight -->
-            <li class="p-5 border-2 border-sky-400 rounded-xl m-2">
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
               <div class="flex items-center">
                   <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m8.jpg" alt=""></p>
                   <div>
@@ -335,8 +462,10 @@
     </div>
 </section>
 
+<!-- Section 6 start: performence and Quality-->
 <section>
     <div>
+        <!-- Heading -->
         <div class="flex justify-center items-center my-10 mx-5">
             <div class="text-4xl font-bold text-center p-3 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-green-500">
                 <p>We Deliver great quality and performance</p>
@@ -345,24 +474,23 @@
             </div>
         </div>
         <div class="px-10 mx-10">
-            <!-- <ul class="flex-row md:flex px-8 py-3 justify-center gap-5 w-[max-100px] h-[max-100px] "> -->
-                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 m-2">
-                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl ">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 m-2 ">
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
                     <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-layer-group"></i></p>
                     <p class="text-xl font-bold m-3">Reserch and Discovery</p>
                     <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
                 </li>
-                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl">
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
                     <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-book"></i></p>
                     <p class="text-xl font-bold m-3">Information Architecture</p>
                     <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
                 </li>
-                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl">
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
                     <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-envelope-open-text"></i></p>
                     <p class="text-xl font-bold m-3">Design & Development</p>
                     <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
                 </li>
-                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl">
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
                     <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-robot"></i></p>
                     <p class="text-xl font-bold m-3">Quality Assuarence,Launch</p>
                     <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
@@ -370,8 +498,14 @@
             </ul>
         </div>
     </div>
+    <!-- bottom border -->
+    <div class="w-full flex justify-center mt-6 mb-3"><div class=" border w-[90%] border-sky-500"></div></div>
 </section>
-<div class="w-full flex justify-center mt-6 mb-3"><div class=" border w-[90%] border-sky-500"></div></div>
+<!-- Section 6 end: performence and Quality-->
+
+
+
+<!-- section 7 start : Quations -->
 <section class="sec-bg">
     <div class="max-w-4xl mx-auto p-6  shadow-lg rounded-lg mt-10 mb-10">
         <h1 class="text-3xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700 mb-6"> Questions About our AIMug? We have Answers!</h1>
@@ -455,17 +589,167 @@
         }
       </script>
 </section>
+<!-- section 7 end : Quations -->
 
+
+<!-- section 8 start : free trial -->
 <section>
-     <div class="flex justify-center">
-        <div class="text-center border w-[80%] my-2 p-4">
+     <div class="flex justify-center mb-3 py-5">
+        <div class="text-center  w-[80%] my-2 p-4 py-10 shadow-lg shadow-sky-300">
             <p class="text-orange-600">14 Day's Free Trial</p>
             <p class="text-3xl font-bold my-4">Be part of the future of AIMug Let's <br> Create Somthing</p>
             <p class="text-gray-500">Chose a tool $ create Somthing better than get startted from today. <br> No Credit Required</p>
-            <button class=" px-4 py-2 bg-blue-700 rounded-lg" type="button">Get Started Free </button>
+            <button class=" px-5 py-3 bg-blue-700 rounded-lg text-lg font-semibold hover:bg-green-700 hover:text-black" type="button">Get Started Free </button>
         </div>
      </div>
-    
 </section>
+<!-- section 8 start : free trial -->
+
+<!-- Footer Section Start... -->
+<section class="bg-gray-900 mt-[2rem]">
+    <div class="container-fluid mx-auto mt-10 p-10 ">
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4  px-3">
+            <div class="p-2">
+                <div class="flex justify-center items-center gap-2 mb-2">
+                    <img src="images/logo.png" alt="Logo" class="animated-logo" height="50" width="50" />
+                    <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+                </div>
+
+                <div class="text-primaryColor mb-2">
+                    <p>It has long been known that a reader's
+                        attention will be diverted from</p>
+                </div>
+                <div>
+                    <p class="text-secondaryColor font-bold mb-2">Join a Newsletter</p>
+                    <div class="flex flex-col">
+                        <input type="email" name="" id=""
+                            class="p-2 rounded-xl border-2 border-secondaryColor  outline-none mb-2">
+                        <button
+                            class="bg-blue-700 text-white font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-green-600 hover:text-white transition duration-300"
+                            type="submit">
+                            Submit
+                            <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="p-2">
+                <p class="text-start text-secondaryColor text-[1.2rem] font-semibold mb-2">Quick Links</p>
+                <div>
+                    <ul
+                        class="py-1 flex flex-col justify-center px-6 gap-3 text-[1rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <p class="text-start text-secondaryColor text-[1.2rem] font-semibold mb-2">Services</p>
+                <ul
+                    class="py-1 flex flex-col justify-center  px-6 gap-3 text-[1rem] font-bold text-primaryColor">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Image Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Text Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Code Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Video Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Education Feedback
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-2">
+                <p
+                    class="text-start text-secondaryColor text-[1.2rem]  font-semibold mb-2">
+                    Contact Us
+                </p>
+                <div class="p-2">
+                    <!-- Address -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 mb-2 text-secondaryColor py-1">
+                        <p><i class="fa-solid fa-location-dot mt-2"></i></p>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            KPHB-500072, Hyderabad, IND
+                        </p>
+                    </div>
+                    <!-- Email -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 mb-2 text-secondaryColor py-1">
+                        <p><i class="fa-solid fa-envelope mt-2"></i></p>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            domain@gmail.com
+                        </p>
+                    </div>
+                    <!-- Phone -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 text-secondaryColor py-1">
+                        <p><i class="fa-solid fa-phone mt-2"></i></p>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            +91 12345 67890
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Footer Section End... -->
+
+
 </body>
 </html>
