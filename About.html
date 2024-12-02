@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .sec-bg {
+        background: rgb(9, 9, 10);
+        background: radial-gradient(
+          circle,
+          rgba(9, 9, 10, 1) 68%,
+          rgb(27, 9, 80) 98%
+        );
+      }
+      
+      /* Logo Animation */
+
+    .animated-logo {
+    animation: spin 3s linear infinite;
+    }
+
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-slate-950 text-white">
+
+<!-- Home Section Start... -->
+<section class="bg-gray-950 rounded-xl border-b border-blue-500">
+    <div class="container-fluid mx-auto flex justify-around items-center py-5">
+        <!-- Logo Part -->
+        <div class="flex justify-center items-center gap-2">
+            <img src="Asset/images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+            <span class="text-sky-500 text-4xl font-bold">Ai</span>
+        </div>
+        <!-- Nav Menu -->
+        <div class="lg:block hidden">
+            <nav>
+                <ul
+                    class="border-[2px] border-sky-500 py-2 rounded-xl flex px-6 gap-5 text-[1.2rem] font-bold text-pink-400">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 transition hover:text-sky-500">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 transition hover:text-sky-500">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 transition hover:text-sky-500">
+                            Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 transition hover:text-sky-500">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 transition hover:text-sky-500">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Buttons -->
+        <div class="text-[1.2rem] font-bold lg:block hidden">
+            <div class="flex gap-2">
+                <button class="from-rose-400 via-fuchsia-800 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-2xl">
+                    Login / Sign Up
+                </button>
+                <button class="from-rose-400 via-fuchsia-800 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-2xl">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div id="hamburger-icon" class="text-4xl font-bold lg:hidden md:block text-sky-500">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Small Screen Responsive Navbar -->
+    <div id="mobile-nav" class="flex hidden flex-col justify-center items-center bg-gray-900">
+        <!-- Mobile Screen Nav Menu -->
+        <nav>
+            <ul
+                class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-sky-500 ">
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-pink-600 transition hover:text-pink-600">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-pink-600 transition hover:text-pink-600">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-pink-600 transition hover:text-pink-600">
+                        Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-pink-600 transition hover:text-pink-600">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-pink-600 transition hover:text-pink-600">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Screen Buttons -->
+        <div class="text-[1.2rem] font-bold">
+            <div class="flex gap-4 ">
+                <button class="border-2 border-sky-500 py-2 px-3 rounded-xl text-pink-500 hover:shadow-md hover:shadow-sky-400">
+                    Login / Sign Up
+                </button>
+                <button class="border-2 border-sky-500 py-2 px-3 rounded-xl text-pink-500 hover:shadow-md hover:shadow-sky-400">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Section End... -->    
+    
+<!-- Main Section 1: About AI -->
+<section class="w-full flex justify-center items-center py-10 sec-bg">
+    <div class="m-5 text-center shadow-lg shadow-sky-300 p-5">
+        <p class="text-red-500 text-xl font-semibold mb-3">About AI</p>
+        <p class="font-bold text-5xl  mb-3 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-300">A Magical Tool For <br>Seamless Collaboration</p>
+        <p class="text-pink-400">Mastering the Art of AI Tool: Unleashing the Power of Automated Creativity with AIMug</p>
+    </div>
+</section>
+<!-- section 1 end  -->
+
+<!-- Section 2: Features & Image -->
+<section class="flex justify-center items-center m-3">
+    <div class="md:flex flex-row justify-center items-center mx-5 py-7 border-2 border-sky-400 rounded-lg shadow-lg shadow-sky-300 ">
+        
+        <!-- Left Features and Reviews -->
+        <div class="text-start  text-3xl m-5 w-full md:w-[600px]">
+            <p class="font-bold p-3 text-sky-400">Create Something New with AIMug, that are simple to use</p>
+            <p class="text-sm p-3 text-gray-300">
+                There are more than 80+ use cases and templates to pick from to meet all of your writing demands. 
+                Let's communicate with your customers with emotions.
+            </p>
+           <div class="flex gap-5">
+            <div class="flex items-center">
+                <p class="text-5xl text-green-500 p-2"><i class="fa-solid fa-star"></i></p>
+                <div>
+                    <p class="text-sm"> ✳️✳️✳️✳️✳️</p>
+                    <p class="text-sm text-gray-300">Rated 4.5. 1,000+ Reviews</p>
+                </div>
+            </div>
+
+            <div class="flex items-center">
+                <p class="text-5xl text-sky-500 p-2"><i class="fa-solid fa-location-arrow"></i></p>
+                <div>
+                    <p class="text-sm">⭐⭐⭐⭐⭐</p>
+                    <p class="text-sm text-gray-300">Rated 4.5. 1,000+ Reviews</p>
+                </div>
+            </div>
+           </div>
+        </div>
+         
+        <!-- Right Image -->
+        <div class="text-center">    
+            <img class="w-full md:w-[600px] h-auto rounded-lg animate-pulse " src="Asset/images/Ai_image1.jpg" alt="AI Tool">
+        </div>
+
+    </div>
+
+</section>
+<!-- Section 2 end -->
+
+
+<!-- section 3 start: teams and agencies -->
+<section class="sec-bg">
+    <div class=" shadow-sm shadow-sky-300  rounded-xl">
+        <p class="font-bold  text-xl text-center m-5 pt-5  pb-3">Trusted by <span class="text-blue-700">10.8k+</span> teams,agencies and freelancers.</p>
+        <div class=" flex justify-center">
+            <div class="">
+                <ul class="flex flex-wrap  gap-5 md:text-2xl font-semibold my-4 p-4 justify-center">
+                    <li><span class="text-green-600"><i class="fa-regular fa-star"></i> </span>Trustpiolot</li>
+                    <li><span class="text-blue-700"><i class="fa-solid fa-volleyball"></i> </span>Vertingo</li>
+                    <li><span class="text-purple-600"><i class="fa-solid fa-peseta-sign"></i> </span>Penta</li>
+                    <li><span class="text-yellow-400"><i class="fa-brands fa-hire-a-helper"></i> </span>Hitech</li>
+                    <li><span class="text-green-800"><i class="fa-brands fa-square-upwork"></i> </span>levelup</li>
+                    <li><span class="text-orange-400"><i class="fa-solid fa-circle-plus"></i> </span>luminous</li>
+                </ul>
+                <ul class="flex flex-wrap  gap-6 md:text-2xl font-semibold my-4 p-4 justify-center">
+                    <li><span class="text-orange-400"><i class="fa-solid fa-music"></i> </span>Volume</li>
+                    <li><span class="text-purple-600"><i class="fa-solid fa-headphones"></i> </span>Homey</li>
+                    <li><span class="text-green-500"><i class="fa-brands fa-mintbit"></i> </span>Minty</li>
+                    <li><span class="text-blue-900"><i class="fa-solid fa-globe"></i> </span>Network</li>
+                    <li><span class="text-red-600"><i class="fa-solid fa-umbrella"></i> </span>umbrella</li>
+                    <li><span class="text-sky-400"> <i class="fa-solid fa-bullseye"></i> </span>Sitmark</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- vidio  -->
+    <div class="w-full flex justify-center my-6">
+        <div class="w-[70%]  shadow-sky-300 rounded-lg  shadow-lg">
+            <video src="Asset/images/1103464_1080p_4k_3840x2160.mp4"type="video/mp4" autoplay muted loop></video>
+        </div>
+    </div>
+</section>
+ <!-- Section 3 end : teams and agencies   -->
+
+  <!--section 4 start : Team members info -->
+<section>
+      <div>
+        <!-- heading -->
+          <div class="m-5 p-5">
+              <p class=" font-bold text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-green-400 ">Meet Our Dynamic Team Member,<br>Who Are  Really Care About</p>
+          </div>
+      </div>
+        <!-- All tem members info -->
+      <div class="flex-row w-full ">
+        <div class="px-10 ">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-10 py-6 justify-center gap-5 w-[max-100px] h-[max-100px] rounded-lg">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m1.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Brooklyn Simmons</p>
+                    <p class=" text-center pb-2">Digital Marketers</p>
+                </li>
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m2.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Ralph Edwards</p>
+                    <p class=" text-center pb-2">Marketing Coordinator</p>
+                </li>
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m3.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Leslie Alexander</p>
+                    <p class=" text-center pb-2">Product Designer</p>
+                </li>
+                <li class=" hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m4.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Jone Cooper</p>
+                    <p class=" text-center pb-2">Web Desingner</p> 
+                </li>
+            </ul>
+            
+        </div>
+        <div class="px-10">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-10 py-6 justify-center gap-5  w-[max-100px] h-[max-100px] rounded-lg">
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m5.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Jacob Jones</p>
+                    <p class=" text-center pb-2">Softwere Engineer</p>
+                </li>
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m6.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Darrell Steward</p>
+                    <p class=" text-center pb-2">President of Sales</p>
+                </li>
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m7.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Courtney Henry</p>
+                    <p class=" text-center pb-2">Lead Devloper</p>
+                </li>
+                <li class="hover:shadow-lg hover:shadow-sky-300"><img src="Asset/images/m8.jpg" alt="">
+                    <p class=" text-center font-bold text-lg px-2 pt-2">Albert Flores</p>
+                    <p class=" text-center pb-2">Digital Creator</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+</section>
+  <!-- section 4 end  Team members info-->
+
+  <!-- section 5 start -->
+  <section class="sec-bg">
+    <div>
+      <!-- heading -->
+        <div class="m-5 p-5">
+            <p class="text-white font-bold text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-green-500"><span class="text-pink-600">AIMug.</span>Received⭐ 4.8/5 Stars in,<br>Over 10,000+ Reviews.</p>
+        </div>
+    </div>
+      <!-- All tem members info -->
+    <div class="flex-row w-full ">
+         <!-- All Cards -->
+      <div class="px-10 mx-10">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                <!-- Card one -->
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+                <div class="flex items-center">
+                    <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m1.jpg" alt=""></p>
+                    <div>
+                        <p class="text-lg font-semibold">Dinnel Russell</p>
+                        <p class="text-sm text-gray-300">content Creator</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xl font-bold p-2">Great look for content writeing Love it !</p>
+                    <p class="text-white p-2">Tis is the best things that has happened to my leam in a while Makes Post text Something</p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="text-lg font-bold"><span class="text-green-500"><i class="fa-solid fa-star"></i> </span>TrustPiolot</div>
+                    <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+                </div>
+              </li>
+               
+              <!-- Card two -->
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+                <div class="flex items-center">
+                    <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m2.jpg" alt=""></p>
+                    <div>
+                        <p class="text-lg font-semibold">Jane Cooper</p>
+                        <p class="text-sm text-gray-300">content Creator</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xl font-bold p-2">Awosome Tools Thanks Marvel Theme!</p>
+                    <p class="text-white p-2">Best Comleate Ai Tool ever i have used. Thanks marvelheme for this type of awsome tools.</p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="text-lg font-bold"><span class="text-sky-500"><i class="fa-solid fa-volleyball"></i> </span>Vertingo</div>
+                    <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+                </div>
+              </li>
+
+               <!-- Card three -->
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+                <div class="flex items-center">
+                    <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m3.jpg" alt=""></p>
+                    <div>
+                        <p class="text-lg font-semibold">Arlene McCoy</p>
+                        <p class="text-sm text-gray-300">content Creator</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xl font-bold p-2">Best User Experience! in Love On it !</p>
+                    <p class="text-white p-2">Alique id fugiat nosturd irure e duis es quis id quit ed Suitqui esse perier duis dessertnt.</p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="text-lg font-bold"><span class="text-green-500"><i class="fa-solid fa-peseta-sign"></i> </span>Penta</div>
+                    <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+                </div>
+              </li>
+
+              <!-- Card four -->
+              <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+                <div class="flex items-center">
+                    <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m4.jpg" alt=""></p>
+                    <div>
+                        <p class="text-lg font-semibold">Cameron Williamson</p>
+                        <p class="text-sm text-gray-300">content Creator</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xl font-bold p-2">Great look Love it Specially for content writeing !</p>
+                    <p class="text-white p-2">Tis is the best things that has happened to my leam in a while Makes Post text Something</p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="text-lg font-bold"><span class="text-purple-600"><i class="fa-solid fa-bullseye"></i> </span>Sitmark</div>
+                    <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+                </div>
+              </li>
+          </ul>
+          
+      </div>
+
+      
+      <div class="px-10 mx-10">
+           <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <!-- Card five -->
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+              <div class="flex items-center">
+                  <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m5.jpg" alt=""></p>
+                  <div>
+                      <p class="text-lg font-semibold">Albert Flores</p>
+                      <p class="text-sm text-gray-300">content Creator</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="text-xl font-bold p-2">Great look for content writeing Love it !</p>
+                  <p class="text-white p-2">Tis is the best things that has happened to my leam in a while Makes Post text Something</p>
+              </div>
+              <div class="flex justify-between">
+                  <div class="text-lg font-bold"><span class="text-pink-600"><i class="fa-brands fa-hire-a-helper"></i> </span>Hitech</div>
+                  <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+              </div>
+            </li>
+             
+            <!-- Card six -->
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+              <div class="flex items-center">
+                  <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m6.jpg" alt=""></p>
+                  <div>
+                      <p class="text-lg font-semibold">Courthey Henry</p>
+                      <p class="text-sm text-gray-300">content Creator</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="text-xl font-bold p-2">Awosome Tools Thanks Marvel Theme!</p>
+                  <p class="text-white p-2">Best Comleate Ai Tool ever i have used. Thanks marvelheme for this type of awsome tools.</p>
+              </div>
+              <div class="flex justify-between">
+                  <div class="text-lg font-bold"><span class="text-orange-500"><i class="fa-solid fa-music"></i> </span>Volume</div>
+                  <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+              </div>
+            </li>
+
+             <!-- Card seven -->
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+              <div class="flex items-center">
+                  <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m7.jpg" alt=""></p>
+                  <div>
+                      <p class="text-lg font-semibold">Marvin Macklnny</p>
+                      <p class="text-sm text-gray-300">content Creator</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="text-xl font-bold p-2">Best User Experience! in Love On it !</p>
+                  <p class="text-white p-2">Alique id fugiat nosturd irure e duis es quis id quit ed Suitqui esse perier duis dessertnt.</p>
+              </div>
+              <div class="flex justify-between">
+                  <div class="text-lg font-bold"><span class="text-green-500"><i class="fa-brands fa-mintbit"></i> </span>Minty</div>
+                  <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+              </div>
+            </li>
+
+            <!-- Card eight -->
+            <li class="p-5 border-2 border-sky-400 rounded-xl m-2 hover:shadow-lg hover:shadow-sky-300">
+              <div class="flex items-center">
+                  <p class="p-1 w-14 h-14 "><img class="rounded-full" src="images/m8.jpg" alt=""></p>
+                  <div>
+                      <p class="text-lg font-semibold">Dinnel Russell</p>
+                      <p class="text-sm text-gray-300">content Creator</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="text-xl font-bold p-2">Great look Love it Specially for content writeing !</p>
+                  <p class="text-white p-2">Tis is the best things that has happened to my leam in a while Makes Post text Something</p>
+              </div>
+              <div class="flex justify-between">
+                  <div class="text-lg font-bold"><span class="text-blue-600"><i class="fa-solid fa-globe"></i> </span>Network</div>
+                  <p class="font-bold px-2 py-1 border border-gray-500 rounded">5⭐</p>
+              </div>
+            </li>
+        </ul>
+        
+    </div>
+</section>
+
+<!-- Section 6 start: performence and Quality-->
+<section>
+    <div>
+        <!-- Heading -->
+        <div class="flex justify-center items-center my-10 mx-5">
+            <div class="text-4xl font-bold text-center p-3 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-green-500">
+                <p>We Deliver great quality and performance</p>
+                <p>while offering you the most recent AI</p>
+                <p>Busoness Products.</p>
+            </div>
+        </div>
+        <div class="px-10 mx-10">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 m-2 ">
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
+                    <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-layer-group"></i></p>
+                    <p class="text-xl font-bold m-3">Reserch and Discovery</p>
+                    <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
+                </li>
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
+                    <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-book"></i></p>
+                    <p class="text-xl font-bold m-3">Information Architecture</p>
+                    <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
+                </li>
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
+                    <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-envelope-open-text"></i></p>
+                    <p class="text-xl font-bold m-3">Design & Development</p>
+                    <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
+                </li>
+                <li class="p-4 hover:border hover:border-sky-600 hover:rounded-2xl hover:shadow-lg hover:shadow-sky-300">
+                    <p class="text-5xl font-bold text-blue-500 m-3"><i class="fa-solid fa-robot"></i></p>
+                    <p class="text-xl font-bold m-3">Quality Assuarence,Launch</p>
+                    <p class="m-3">A Magical Tool to Optimize you content for the first know who you're targeting.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- bottom border -->
+    <div class="w-full flex justify-center mt-6 mb-3"><div class=" border w-[90%] border-sky-500"></div></div>
+</section>
+<!-- Section 6 end: performence and Quality-->
+
+
+<!-- section 8 start : free trial -->
+<section>
+     <div class="flex justify-center mb-3 py-5">
+        <div class="text-center  w-[80%] my-2 p-4 py-10 shadow-lg shadow-sky-300">
+            <p class="text-orange-600">14 Day's Free Trial</p>
+            <p class="text-3xl my-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-green-400">Be part of the future of AIMug Let's <br> Create Somthing</p>
+            <p class="text-gray-500">Chose a tool $ create Somthing better than get startted from today. <br> No Credit Required</p>
+            <button class=" px-5 py-3 bg-blue-700 rounded-lg text-lg font-semibold hover:bg-transparent hover:border-2 hover:border-blue-600"  type="button">Get Started Free </button>
+        </div>
+     </div>
+</section>
+<!-- section 8 start : free trial -->
+
+<!-- Footer Section Start... -->
+<section class="bg-gray-900 mt-[2rem]">
+    <div class="container-fluid mx-auto mt-10 p-10 ">
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4  px-3">
+            <div class="p-2">
+                <div class="flex justify-center items-center gap-2 mb-2">
+                    <img src="Asset/images/logo.png" alt="Logo" class="animated-logo" height="50" width="50" />
+                    <span class="text-sky-500 text-4xl font-bold">Ai</span>
+                </div>
+
+                <div class="text-green-400 mb-2">
+                    <p>It has long been known that a reader's
+                        attention will be diverted from</p>
+                </div>
+                <div>
+                    <p class="text-sky-400 font-bold mb-2">Join a Newsletter</p>
+                    <div class="flex flex-col">
+                        <input type="email" name="" id=""
+                            class="p-2 rounded-xl border-2 border-green-500 outline-none mb-2">
+                        <button
+                            class="bg-blue-700 text-white font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-transparent hover:border-2 hover:border-sky-400 transition duration-200"
+                            type="submit">
+                            Submit
+                            <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="p-2">
+                <p class="text-start text-sky-400 text-[1.2rem] font-semibold mb-2">Quick Links</p>
+                <div>
+                    <ul
+                        class="py-1 flex flex-col justify-center px-6 gap-3 text-[1rem] font-bold text-gray-400">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <p class="text-start text-sky-400 text-[1.2rem] font-semibold mb-2">Services</p>
+                <ul
+                    class="py-1 flex flex-col justify-center  px-6 gap-3 text-[1rem] font-bold text-gray-400">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                            Image Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                            Text Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                            Code Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                            Video Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-sky-500 hover:text-sky-400 transition">
+                            Education Feedback
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-2">
+                <p
+                    class="text-start text-sky-400 text-[1.2rem]  font-semibold mb-2">
+                    Contact Us
+                </p>
+                <div class="p-2">
+                    <!-- Address -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 mb-2 text-sky-400 py-1">
+                        <p><i class="fa-solid fa-location-dot mt-2"></i></p>
+                        <p class="text-sky-400 text-center sm:text-left">
+                            KPHB-500072, Hyderabad, IND
+                        </p>
+                    </div>
+                    <!-- Email -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 mb-2 text-sky-400 py-1">
+                        <p><i class="fa-solid fa-envelope mt-2"></i></p>
+                        <p class="text-sky-300 text-center sm:text-left">
+                            domain@gmail.com
+                        </p>
+                    </div>
+                    <!-- Phone -->
+                    <div
+                        class="flex  justify-start items-center sm:items-start gap-4 text-sky-400 py-1">
+                        <p><i class="fa-solid fa-phone mt-2"></i></p>
+                        <p class="text-sky-300 text-center sm:text-left">
+                            +91 12345 67890
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Footer Section End... -->
+
+<script>
+    // Get hamburger icon and mobile navbar
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileNav = document.getElementById("mobile-nav");
+
+        // Toggle the mobile navbar visibility on hamburger icon click
+        hamburgerIcon.addEventListener("click", () => {
+            mobileNav.classList.toggle("hidden");
+        });
+</script>
+</body>
+</html>
