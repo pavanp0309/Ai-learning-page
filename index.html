@@ -1,12 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projec-sass</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Landing Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome Icon CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Home Section Start... -->
+    <section class="">
+        <div class="container-fluid mx-auto flex justify-around items-center py-3 bg-heroBg">
+            <!-- Logo Part -->
+            <div class="flex justify-center items-center gap-2">
+                <img src="./asset/images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+                <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+            </div>
+            <!-- Nav Menu -->
+            <div class="lg:block hidden">
+                <nav>
+                    <ul
+                        class="border-[1px] border-secondaryColor py-2 rounded-full flex px-6 gap-5 text-[1.2rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Buttons -->
+            <div class="text-[1.2rem] font-bold lg:block hidden">
+                <div class="flex gap-2">
+                    <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                        Login / Sign Up
+                    </button>
+                    <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger-icon"
+                class="text-4xl font-bold lg:hidden md:block hover:cursor-pointer text-secondaryColor">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Small Screen Responsive Navbar -->
+        <div id="mobile-nav" class="hidden ">
+            <div class="flex flex-col justify-center items-center bg-heroBg">
+                <!-- Mobile Screen Nav Menu -->
+                <nav>
+                    <ul
+                        class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Screen Buttons -->
+                <div class="text-[1.2rem] font-bold">
+                    <div class="flex gap-4 mb-5">
+                        <button
+                            class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                            Login / Sign Up
+                        </button>
+                        <button
+                            class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End... -->
+
+    <!-- Hero Section Start... -->
+    <section class="sec-bg py-10">
+        <div class="container mx-auto text-center flex items-center justify-center px-20 min-w-[400px] py-[4rem]">
+            <div class="text-white">
+                <h1 class="text-[1.2rem] md:text-4xl lg:text-3xl font-bold mb-4">
+                    <span
+                        class="block animate-typewriter whitespace-nowrap overflow-hidden border-r-2 border-white text-purple-600">
+                        Redefining AI, One Innovation at a Time
+                    </span>
+                </h1>
+                <p class="text-base md:text-xl font-light mb-6">
+                    Transforming ideas into intelligent solutions.
+                </p>
+                <div class="flex justify-center gap-4 mt-10">
+                    <button
+                        class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                        Get Started
+                    </button>
+                    <button
+                        class="bg-transparent border border-white py-2 px-4 md:px-6 rounded-lg hover:bg-white hover:text-purple-600 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <img src="./asset/images/hero-image.webp" alt="Hero-Section-Image"
+                class="rounded-[20px] container mx-auto object-cover animate-pulse img-fluid w-[500px] h-auto" />
+        </div>
+
+    </section>
+    <!-- Hero Section End... -->
+
+    <!-- About Section Start... -->
+    <section class="sec-bg py-5 mt-1">
+        <!-- About Content Part -->
+        <div class="container mx-auto w-full flex justify-center items-center py-10">
+            <div class="m-5 text-center">
+                <p class="text-3xl lg:text-5xl font-bold text-secondaryColor mb-5">
+                    About AI
+                </p>
+                <p class="font-bold lg:text-5xl text-3xl text-primaryColor mb-3">
+                    A Magical Tool For <br />Seamless Collaboration
+                </p>
+                <p class="text-primaryColor text-2xl">
+                    Mastering the Art of AI Tool: Unleashing the Power of Automated
+                    Creativity with AIMug
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center m-3">
+            <div class="container md:flex flex-row justify-center items-center mx-5 py-7 rounded-lg shadow-lg">
+                <!-- Left Features and Reviews -->
+                <div class="text-start text-white text-2xl lg:text-4xl m-5 w-full md:w-[650px]">
+                    <p class="font-bold p-3 text-secondaryColor">
+                        Create Something New with AI, that are simple to use
+                    </p>
+                    <p class="lg:text-[1rem] text-sm px-3 md:mb-3 text-primaryColor">
+                        There are more than 80+ Tools and templates to pick from to meet
+                        all of your demands. Let's communicate with your customers with
+                        emotions.
+                    </p>
+                    <div class="flex items-center">
+                        <p class="text-5xl text-starColor p-2">
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <div>
+                            <p class="text-sm text-starColor mb-1 star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star half-star"></i>
+                            </p>
+
+                            <p class="text-sm text-primaryColor">
+                                Rated 4.5. 1,000+ Reviews
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="text-center">
+                    <img class="w-full md:w-[600px] h-auto rounded-lg animate-pulse"
+                        src="./asset/images/about-us-image.webp" alt="AI Tool" />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center mt-5">
+            <a href="#about">
+                <button
+                    class="bg-white text-purple-600 font-medium py-2 px-4  md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                    Know More...
+                </button>
+            </a>
+        </div>
+    </section>
+    <!-- About Section End... -->
+
+    <!-- AI Features Section / Services Start... -->
+    <section class="sec-bg py-5 mt-1">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center flex-col py-10 text-white">
+                <p class="text-[1rem] text-secondaryColor font-bold mb-2 pt-5">
+                    UNLOCKS THE POTENTIAL OF Ai
+                </p>
+                <p class="lg:text-5xl text-3xl text-primaryColor font-bold">
+                    Generative <span class="text-secondaryColor">AI</span> made for
+                </p>
+                <p class="lg:text-4xl text-2xl text-primaryColor font-bold">
+                    creators.
+                </p>
+            </div>
+
+            <div class="p-10 my-5 grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+                <button
+                    class="border-2 border-secondaryColor py-2 px-4 rounded-full flex justify-center items-center gap-3 hover:bg-purple-600 transition duration-300">
+                    <i class="fa-solid fa-video text-secondaryColor hover:text-heroBg"></i>
+                    <span class="text-primaryColor hover:text-heroBg">Video Generator</span>
+                </button>
+                <button
+                    class="border-2 border-secondaryColor py-2 px-4 rounded-full flex justify-center items-center gap-3 hover:bg-purple-600 transition duration-300">
+                    <i class="fa-solid fa-file-audio text-secondaryColor hover:text-heroBg">
+                    </i>
+                    <span class="text-primaryColor hover:text-heroBg">Audio Generator
+                    </span>
+                </button>
+                <button
+                    class="border-2 border-secondaryColor py-2 px-4 rounded-full flex justify-center items-center gap-3 hover:bg-purple-600 transition duration-300">
+                    <i class="fa-solid fa-camera text-secondaryColor hover:text-heroBg"></i>
+                    <span class="text-primaryColor hover:text-heroBg">Photo Generator</span>
+                </button>
+                <button
+                    class="border-2 border-secondaryColor py-2 px-4 rounded-full flex justify-center items-center gap-3 hover:bg-purple-600 transition duration-300">
+                    <i class="fa-solid fa-code text-secondaryColor hover:text-heroBg"></i>
+                    <span class="text-primaryColor hover:text-heroBg">Code Generator</span>
+                </button>
+            </div>
+
+            <div class="container mx-auto flex md:flex-row flex-col-reverse justify-around items-center">
+                <div class=" ">
+                    <div class="text-primaryColor font-bold p-2">
+                        <p class="lg:text-3xl text-2xl">
+                            Code generating <span class="text-secondaryColor">AI</span>
+                        </p>
+                        <p class="lg:text-2xl text-[1rem]">refers to artificial</p>
+                        <p class="text-[1rem]">intelligence.</p>
+                    </div>
+                    <div class="mt-5 text-white flex flex-col p-5">
+                        <div class="flex justify-start items-center gap-3 mb-2">
+                            <i class="fa-solid fa-circle-check text-secondaryColor"></i>
+                            <p class="text-primaryColor">Transformer Models</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-3 mb-2">
+                            <i class="fa-solid fa-circle-check text-secondaryColor"></i>
+                            <p class="text-primaryColor">Conditional Generative Models</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-3 mb-2">
+                            <i class="fa-solid fa-circle-check text-secondaryColor"></i>
+                            <p class="text-primaryColor">Pre-trained Models</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-3 mb-2">
+                            <i class="fa-solid fa-circle-check text-secondaryColor"></i>
+                            <p class="text-primaryColor">Variational Autoencoders</p>
+                        </div>
+                    </div>
+                    <div class="flex lg:justify-start justify-center items-center my-5">
+                        <a href="#service">
+                            <button
+                                class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                                Start Exploring Now
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:mb-0 mb-5">
+                    <img src="./asset/images/feature-image.webp" alt="Hero-Section-Image"
+                        class="rounded-[20px] object-cover animate-pulse lg:h-[400px] h-[300px] lg:w-[500px] w-[300px]" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AI Features Section / Services End... -->
+
+    <!-- Pricing Section  Start... -->
+    <section class="sec-bg py-5 mt-1">
+        <div class="container mx-auto">
+            <div class="flex justify-center">
+                <p class="text-3xl lg:text-5xl font-bold text-secondaryColor mb-5 pt-10">
+                    Try Our Plans
+                </p>
+            </div>
+
+            <div class="flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-6 p-5">
+                <div>
+                    <img src="./asset/images/payment-image.webp" alt="our-plan-section-image"
+                        class="w-[300px] h[300px] md:h-[450px] md:w-[450px] lg:w-[600px] lg:h-[330px] rounded-full animate-pulse" />
+                </div>
+                <div
+                    class="p-5 flex flex-col justify-center lg:justify-start items-center lg:items-start text-primaryColor">
+                    <p class="text-secondaryColor mb-2">How it work</p>
+                    <p class="text-2xl lg:text-3xl font-bold mb-3">
+                        Connect with <span class="text-secondaryColor">Al</span> chatbot
+                    </p>
+                    <p class="lg:mx-0 mx-10 lg:p-0 p-2">
+                        Dentify the platform or interface through which you can access the
+                        chatbot. This could be a website, a messaging app, or a dedicated
+                        application.
+                    </p>
+                    <div class="flex lg:justify-start justify-center items-center my-5">
+                        <a href="#price">
+                            <button
+                                class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                                Try It Now
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section  End... -->
+
+    <!-- Review Section Start... -->
+    <section class="sec-bg py-5 mt-1">
+        <div class="container mx-auto">
+
+            <div class="p-10">
+                <p class="text-white font-bold text-4xl text-center">
+                    The opinions of the <span class="text-secondaryColor">Community.</span>
+                </p>
+            </div>
+
+            <div>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+                    <!-- Card one -->
+                    <li
+                        class="p-5 border-2 border-secondaryColor rounded-xl m-2  hover:shadow-lg hover:shadow-secondaryColor">
+                        <div class="flex items-center hover:shadow-lg ">
+                            <p class="p-1 w-14 h-14 "><img class="rounded-full" src="./asset/images/rev-img-1.jpg"
+                                    alt=""></p>
+                            <div>
+                                <p class="text-lg font-semibold text-secondaryColor">Dinnel Russell</p>
+                                <p class="text-sm text-primaryColor">content Creator</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold p-2 text-primaryColor">Great look for content writing Love it !
+                            </p>
+                            <p class="text-white p-2">Tis is the best things that has happened to my life in a while
+                                Makes Post
+                                text Something</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="text-lg font-bold text-secondaryColor"><span class="text-green-500"><i
+                                        class="fa-solid fa-star"></i>
+                                </span>TrustPilot</div>
+                            <p class="font-bold px-2 py-1 border border-gray-500 rounded text-primaryColor">5⭐</p>
+                        </div>
+                    </li>
+
+                    <!-- Card two -->
+                    <li
+                        class="p-5 border-2 border-secondaryColor rounded-xl m-2 hover:shadow-lg hover:shadow-secondaryColor">
+                        <div class="flex items-center">
+                            <p class="p-1 w-14 h-14 "><img class="rounded-full" src="./asset/images/rev-img-2.jpg"
+                                    alt=""></p>
+                            <div>
+                                <p class="text-lg font-semibold text-secondaryColor">Jane Cooper</p>
+                                <p class="text-sm text-primaryColor">content Creator</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold p-2 text-primaryColor">Awesome Tools Thanks Marvel Theme !</p>
+                            <p class="text-white p-2">Best Complete Ai Tool ever i have used. Thanks marvel theme for
+                                this
+                                type of
+                                awesome tools.</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="text-lg font-bold text-secondaryColor "><span class="text-sky-500"><i
+                                        class="fa-solid fa-volleyball"></i>
+                                </span>Vertingo</div>
+                            <p class="font-bold px-2 py-1 border border-gray-500 rounded text-primaryColor">5⭐</p>
+                        </div>
+                    </li>
+
+                    <!-- Card three -->
+                    <li
+                        class="p-5 border-2 border-secondaryColor rounded-xl m-2 hover:shadow-lg hover:shadow-secondaryColor">
+                        <div class="flex items-center">
+                            <p class="p-1 w-14 h-14 "><img class="rounded-full" src="./asset/images/rev-img-3.jpg"
+                                    alt=""></p>
+                            <div>
+                                <p class="text-lg font-semibold text-secondaryColor">Arlene McCoy</p>
+                                <p class="text-sm text-primaryColor">content Creator</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold p-2 text-primaryColor">Best User Experience! in Love On it !</p>
+                            <p class="text-white p-2">Alique id fugiat nosturd irure e duis es quis id quit ed Suitqui
+                                esse
+                                perier duis dessertnt.</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="text-lg font-bold text-secondaryColor"><span class="text-green-500"><i
+                                        class="fa-solid fa-peseta-sign"></i>
+                                </span>Penta</div>
+                            <p class="font-bold px-2 py-1 border border-gray-500 rounded text-primaryColor">5⭐</p>
+                        </div>
+                    </li>
+
+                    <!-- Card four -->
+                    <li
+                        class="p-5 border-2 border-secondaryColor rounded-xl m-2 hover:shadow-lg hover:shadow-secondaryColor">
+                        <div class="flex items-center">
+                            <p class="p-1 w-14 h-14 "><img class="rounded-full" src="./asset/images/rev-img-4.jpg"
+                                    alt=""></p>
+                            <div>
+                                <p class="text-lg font-semibold text-secondaryColor">Cameron Williamson</p>
+                                <p class="text-sm text-primaryColor">content Creator</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold p-2 text-primaryColor">Great look Love it Specially for content
+                                writing !</p>
+                            <p class="text-white p-2">Tis is the best things that has happened to my leam in a while
+                                Makes Post
+                                text Something</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="text-lg font-bold text-secondaryColor"><span class="text-purple-600"><i
+                                        class="fa-solid fa-bullseye"></i>
+                                </span>Sitmark</div>
+                            <p class="font-bold px-2 py-1 border border-gray-500 rounded text-primaryColor">5⭐</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex justify-center items-center p-3 mt-5">
+                <span class="text-primaryColor text-[1rem] font-semibold">⭐⭐⭐⭐⭐ Based on 20,000+ reviews on</span>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5 p-10 ">
+
+                <img src="./asset/images/MTCH_BIG.D.svg" style="max-height: 80px;" alt="" class="p-2" alt="">
+                <img src="./asset/images/GMAB_BIG.D.svg" style="max-height: 60px;" alt="" class="p-2">
+                <img src="./asset/images/canva.D.svg" style="max-height: 60px;" alt="" class="p-2">
+                <img src="./asset/images/CG_BIG.D.svg" style="max-height:30px;" alt="" class="p-2">
+                <img src="./asset/images/SYNH_BIG.D.svg" style="max-height: 80px;" alt="" class="p-2">
+                <img src="./asset/images/AMGN_BIG.D.svg" style="max-height: 50px;" alt="" class="p-2">
+                <img src="./asset/images/klarna_BIG.D.svg" style="max-height: 50px;" alt="" class="p-2">
+                <img src="./asset/images/SHOP_BIG.D.svg" style="max-height: 60px;" alt="" class="p-2">
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Review Section End... -->
+
+
+    <!-- Contact Section Start... -->
+    <section class="sec-bg py-5 mt-1">
+        <div class="container mx-auto p-10">
+
+            <div class="mb-10 p-5">
+                <p class="text-white font-bold text-4xl text-center">
+                    Let's <span class="text-secondaryColor">Connect</span> With Us.
+                </p>
+            </div>
+
+            <div class=" grid gap-8 grid-cols-1 md:grid-cols-2 ">
+
+                <div>
+                    <img src="./asset/images/contact-image.webp" alt=""
+                        class="h-[300px] w-[300px] rounded-full animate-pulse">
+                </div>
+
+                <div class=" flex flex-col justify-center text-white">
+                    <p class="text-2xl lg:text-3xl text-primaryColor font-bold p-2">Join Our Expert <span
+                            class="text-secondaryColor">Ai</span> Community.</p>
+                    <p class="text-primaryColor pb-4">Meet and learn from 80+ creators & companies who share how they
+                        use AI
+                        to
+                        create better content at
+                        lightning speed.
+                    </p>
+                    <div class="flex lg:justify-start items-center my-5">
+                        <a href="#price">
+                            <button
+                                class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                                Connect With Us
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Contact Section End... -->
+
+
+
+    <!-- Footer Section Start... -->
+    <section class="bg-heroBg mt-1">
+        <div class="container-fluid mx-auto p-10 ">
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-2">
+                    <div class="flex justify-center items-center gap-2 mb-2">
+                        <img src="./asset/images/logo.png" alt="Logo" class="animated-logo" height="50" width="50" />
+                        <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+                    </div>
+
+                    <div class="text-primaryColor mb-2">
+                        <p>It has long been known that a reader's
+                            attention will be diverted from</p>
+                    </div>
+                    <div>
+                        <p class="text-secondaryColor font-bold mb-2">Join a Newsletter</p>
+                        <div class="flex flex-col">
+                            <input type="email" name="" id=""
+                                class="p-2 rounded-full border-2 border-secondaryColor  outline-none mb-2">
+                            <button
+                                class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300"
+                                type="submit">
+                                Submit
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Quick Links</p>
+                    <div>
+                        <ul
+                            class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                            <li>
+                                <a href="#"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Services</p>
+                    <ul
+                        class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Image Generator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Text Generator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Code Generator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Video Generator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Education Feedback
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor hover:text-secondaryColor text-[1.2rem] font-semibold mb-2">
+                        Contact Us
+                    </p>
+                    <div class="">
+                        <!-- Address -->
+                        <div
+                            class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                            <i class="fa-solid fa-location-dot mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                KPHB-500072, Hyderabad, IND
+                            </p>
+                        </div>
+                        <!-- Email -->
+                        <div
+                            class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                            <i class="fa-solid fa-envelope mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                domain@gmail.com
+                            </p>
+                        </div>
+                        <!-- Phone -->
+                        <div class="flex flex-col sm:flex-row justify-start items-start gap-4 text-secondaryColor py-1">
+                            <i class="fa-solid fa-phone mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                +91 12345 67890
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer Section End... -->
+
+
+    <script>
+        // Get hamburger icon and mobile navbar
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileNav = document.getElementById("mobile-nav");
+
+        // Toggle the mobile navbar visibility on hamburger icon click
+        hamburgerIcon.addEventListener("click", () => {
+            mobileNav.classList.toggle("hidden");
+        });
+
+        // Star Rating
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const starSection = document.querySelector(".star-rating");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            starSection.classList.add("animate"); // Add animation class
+                            observer.unobserve(starSection); // Stop observing after animation
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5, // Trigger animation when 50% of the element is visible
+                }
+            );
+
+            observer.observe(starSection);
+        });
+    </script>
 </body>
+
 </html>
