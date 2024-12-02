@@ -10,12 +10,6 @@ module.exports = {
       xl:"1440px"
     },
     extend: {
-      // additional custom styles if required
-      width: {
-        '3/10': '30%',
-        '5/10': '50%',
-      },
-      
 
     },
   },
