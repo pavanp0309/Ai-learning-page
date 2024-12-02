@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projec-sass</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body class="bg-black">
+
+<!-- Home NavBar Section Start... -->
+ 
+    <div class="container-fluid mx-auto flex justify-around items-center py-5 mb-10">
+        <!-- Logo Part -->
+        <div class="flex justify-center items-center gap-2">
+            <img src="images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+            <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+        </div>
+        <!-- Nav Menu -->
+        <div class="lg:block hidden">
+            <nav>
+                <ul
+                    class="border-[1px] border-secondaryColor py-2 rounded-full flex px-6 gap-5 text-[1.2rem] font-bold text-primaryColor">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Buttons --------------------------------------------->
+        <div class="text-[1.2rem] font-bold lg:block hidden">
+            <div class="flex gap-2">
+                <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                    Login / Sign Up
+                </button>
+                <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div id="hamburger-icon" class="text-4xl font-bold lg:hidden md:block text-secondaryColor">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Small Screen Responsive Navbar -->
+    <div id="mobile-nav" class="hidden flex flex-col justify-center items-center">
+        <!-- Mobile Screen Nav Menu -->
+        <nav>
+            <ul
+                class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-primaryColor">
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Screen Buttons -->
+        <div class="text-[1.2rem] font-bold">
+            <div class="flex gap-4">
+                <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                    Login / Sign Up
+                </button>
+                <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </div>
+ 
+<!-- Home Nav Section End... -->
+
+
+
+
+<!---------------------------------------First Small Tittle -------------------------------------------------------------->
+
+<div class="text-center mt-16 mb-4 font-bold text-transparent bg-clip-text bg-gradient-to-t from-pink-900 to-blue-100">Ai-Use-Cases<span>!</span></div> 
+
+<!------------------------------------------Main Tittle-------------------------------------------------------------------->
+<div class="text-center sm:text-1xl lg:text-4xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700 mb-6">Write Better Content Faster, The Future <br>
+    Of Al Writing Tools is Here</div>
+
+
+<!-------------------------------------- Start Card Section First ---------------------------------------------------------->
+
+
+<div class="grid justify-evenly mt-10 mb-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <!--- Card One --->
+    <div class="text-gray-400  p-5"><i class="fa-brands fa-blogger-b text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700 text-3xl border border-gray-600 p-2 mb-4 rounded-lg"></i><div class="text-white font-bold mb-4">
+    Writing Blog Content </div>Writing blog content with GenAl, makesure you have a clear understanding
+    of who your audience ls.<div class="mt-6">Try Blog Content &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Two --->
+    <div class="text-gray-400  p-5"><i class="fa-solid fa-rectangle-ad text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    Digital Ad Copy</div> A Magical Tool to Optimize you content for the first know who your targeting.ldentify your target.
+    <div class="mt-6">Try Digital Ad &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Three --->
+    <div class="text-gray-400  p-5"><i class="fa-brands fa-square-web-awesome-stroke text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    Website Copy</div>Optimize you content for the first know who you're targeting. ldentify your target audience.
+    <div class="mt-6">Try Website Copy &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Four --->
+    <div class="text-gray-400  p-5"><i class="fa-solid fa-compact-disc text-4xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    Social Media Content </div>first know who you're targeting. ldentify your target audience and understand their needs.
+    <div class="mt-6">Try Social Media Content &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+</div>
+
+<!-------------------------------------- Start Card Section Second ---------------------------------------------------------->
+
+
+<div class="grid justify-evenly mt-10 mb-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <!--- Card One --->
+    <div class="text-gray-400 p-5"><i class="fa-solid fa-house-fire text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    Landing Page Copy</div> A landing page is a web page that 
+    potential customers land on after clicking an ad or other digital location.
+    <div class="mt-6">Try Blog Content &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Two --->
+    <div class="text-gray-400 p-5"><i class="fa-solid fa-square-poll-vertical text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">Marketing Copy</div>Marketing copy is written content
+     that promotes a product or service, and aims to educate or persuade an audience
+    <div class="mt-6">Try Marketing Copy &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Three  -->
+    <div class="text-gray-400 p-5"><i class="fa-solid fa-briefcase text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    e-Commers Copy </div>E-commerce, or electronic commerce, 
+    is the buying and selling of goods and services online.<div class="mt-6">Try e-Commers Copy&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Four --->
+    <div class="text-gray-400  p-5"> <i class="fa-solid fa-gift text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">Product Description </div>A product description is a piece 
+    of marketing copy that explains what a product is, and why it's worth buying.
+    <div class="mt-6">Try Product Description Copy &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+</div>
+
+
+<!-------------------------------------- Start Card Section Third ---------------------------------------------------------->
+
+
+<div class="grid justify-evenly mt-10 mb-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <!--- Card One --->
+    <div class="text-gray-400  p-5"><i class="fa-solid fa-envelope text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    Email Marketing </div> A landing page is a web page that potential customers land on after clicking an ad or other digital location.
+    <div class="mt-6">Try Blog Content &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Two --->
+    <div class="text-gray-400 p-5"><i class="fa-regular fa-newspaper text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    News Article</div>Marketing copy is written content that promotes a product or service, and aims to educate or persuade an audience
+    <div class="mt-6">Try Marketing Copy &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Three  -->
+    <div class="text-gray-400 p-5"><i class="fa-solid fa-chalkboard text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4">
+    SEO-Content</div>E-commerce, or electronic commerce, is the buying and selling of goods and services online.<div class="mt-6">
+    Try e-Commers Copy&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+    <!--- Card Four --->
+    <div class="text-gray-400  p-5"><i class="fa-solid fa-book-atlas text-4xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700"></i><div class="text-white font-bold mb-4 ">Technical Writing</div>A product description is a piece 
+    of marketing copy that explains what a product is, and why it's worth buying.
+    <div class="mt-6">Try Product Description Copy &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text-gray-300"></i></div>
+</div>
+</div>
+
+
+<!-------------------------------------------------- Question Section ----------------------------------------------->
+
+    <div class="max-w-4xl mx-auto p-6 bg-black shadow-lg rounded-lg mt-10 mb-10">
+      <h1 class="text-center sm:text-1xl lg:text-4xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700 mb-10">Questions About our GenAI?<br>
+        We have Answers!</h1>
+  
+      <!-- FAQ Item Template -->
+      <div class="faq-item border-b border-gray-200 pb-4 mb-4">
+        <button class="w-full flex justify-between items-center text-left bg-gradient-to-r from-blue-700 to-pink-700 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+                onclick="toggleAnswer(this)">
+          <span>Is It Helpful for Digital Marketer or Content Writer?</span>
+          <span class="text-xl font-bold">+</span>
+        </button>
+        <div class="hidden mt-2 p-4 bg-gray-100 rounded-lg">
+          Standard shipping takes 5–7 business days. Expedited options are available at checkout.
+        </div>
+      </div>
+  
+      <div class="faq-item border-b border-gray-200 pb-4 mb-4">
+        <button class="w-full flex justify-between items-center text-left bg-gradient-to-r from-blue-700 to-pink-700 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+                onclick="toggleAnswer(this)">
+          <span>Is There A Limit on How Much Content I Can Generate?</span>
+          <span class="text-xl font-bold">+</span>
+        </button>
+        <div class="hidden mt-2 p-4 bg-gray-100 rounded-lg">
+          Yes, you will receive a tracking number via email once your order ships.
+        </div>
+      </div>
+  
+      <div class="faq-item border-b border-gray-200 pb-4 mb-4">
+        <button class="w-full flex justify-between items-center text-left 
+        bg-gradient-to-r from-blue-700 to-pink-700 text-white px-4 py-2
+         rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+                onclick="toggleAnswer(this)">
+          <span>What Language Does It Supports?</span>
+          <span class="text-xl font-bold">+</span>
+        </button>
+        <div class="hidden mt-2 p-4 bg-gray-100 rounded-lg">
+          We accept returns within 30 days of purchase. Items must be unused and in their original packaging.
+        </div>
+      </div>
+  
+      <div class="faq-item border-b border-gray-200 pb-4 mb-4">
+        <button class="w-full flex justify-between items-center text-left 
+        bg-gradient-to-r from-blue-700 to-pink-700 text-white px-4 py-2 
+        rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+                onclick="toggleAnswer(this)">
+          <span> What is SEO Writing AI and How do I USE It?</span>
+          <span class="text-xl font-bold">+</span>
+        </button>
+        <div class="hidden mt-2 p-4 bg-gray-100 rounded-lg">
+          Yes, we ship internationally. Delivery times and costs vary by location.
+        </div>
+      </div>
+    </div>
+  
+<!------------------------------------------- AI Image-gen.jpg ------------------------------------------>
+<div class="container mt-2 mx-auto">
+<div class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-pink-700
+text-center sm:text-1xl lg:text-4xl md:text-3xl">
+Using GenAl you can save hours each week <br> creating long-form content</div>
+<div class="mb-16 mt-8 "> 
+<img src="Images/AI.png" class="hover:shadow-2xl hover:shadow-gray-900 rounded-xl sm:text-1xl lg:text-xl md:text-xl"></div>
+</div>
+<!-------------------------------------------Imgae Section Completed------------------------------->
+
+<!-- Footer Section Start... -->
+<section class="bg-heroBg mt-[2rem]">
+    <div class="container-fluid mx-auto mt-10 p-10 ">
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div class="p-2">
+                <div class="flex justify-center items-center gap-2 mb-2">
+                    <img src="Images/logo.png" alt="Logo" class="animated-logo" height="50" width="50" />
+                    <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+                </div>
+
+                <div class="text-primaryColor mb-2">
+                    <p>It has long been known that a reader's
+                        attention will be diverted from</p>
+                </div>
+                <div>
+                    <p class="text-secondaryColor font-bold mb-2">Join a Newsletter</p>
+                    <div class="flex flex-col">
+                        <input type="email" name="" id=""
+                            class="p-2 rounded-full border-2 border-secondaryColor  outline-none mb-2">
+                        <button
+                            class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300"
+                            type="submit">
+                            Submit
+                            <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Quick Links</p>
+                <div>
+                    <ul
+                        class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Services</p>
+                <ul
+                    class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Image Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Text Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Code Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Video Generator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Education Feedback
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-2">
+                <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">
+                    Contact Us
+                </p>
+                <div class="">
+                    <!-- Address -->
+                    <div
+                        class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                        <i class="fa-solid fa-location-dot mt-2"></i>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            KPHB-500072, Hyderabad, IND
+                        </p>
+                    </div>
+                    <!-- Email -->
+                    <div
+                        class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                        <i class="fa-solid fa-envelope mt-2"></i>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            domain@gmail.com
+                        </p>
+                    </div>
+                    <!-- Phone -->
+                    <div class="flex flex-col sm:flex-row justify-start items-start gap-4 text-secondaryColor py-1">
+                        <i class="fa-solid fa-phone mt-2"></i>
+                        <p class="text-primaryColor text-center sm:text-left">
+                            +91 12345 67890
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Footer End... -->
+
+
+
+
+
+
+
+<!--------------------------------------For Toggle Plus Button-------------------------------->
+    <script>
+      function toggleAnswer(button) {
+        const answer = button.nextElementSibling;
+        const sign = button.querySelector('span:nth-child(2)');
+        answer.classList.toggle('hidden');
+        sign.textContent = answer.classList.contains('hidden') ? '+' : '-';
+      }
+
+      // Get hamburger icon and mobile navbar
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileNav = document.getElementById("mobile-nav");
+
+        // Toggle the mobile navbar visibility on hamburger icon click
+        hamburgerIcon.addEventListener("click", () => {
+            mobileNav.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
