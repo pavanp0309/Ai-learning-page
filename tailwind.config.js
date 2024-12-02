@@ -3,11 +3,11 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     // add custom styles if needed
-    screens:{
-      sm:"480px",
-      md:"768px",
-      lg:"976px",
-      xl:"1440px"
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
     },
     extend: {
       colors: {
@@ -15,9 +15,8 @@ module.exports = {
         primaryColor: "#9A999E",
         secondaryColor: "#522699",
         starColor: "#FFDF00",
-      },
+ 
     },
   },
   plugins: [],
-}
-
+};
