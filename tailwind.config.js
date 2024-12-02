@@ -10,13 +10,7 @@ module.exports = {
       xl:"1440px"
     },
     extend: {
- 
-      colors: {
-        heroBg: "#0D0D16", // Custom color for hero background
-        primaryColor: "#9A999E",
-        secondaryColor: "#522699",
-        starColor: "#FFDF00",
- 
+
     },
   },
   plugins: [],
