@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projec-sass</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- Home Section Start... -->
+    <section class="border-2 border-red-700">
+        <div class="container-fluid mx-auto flex justify-around items-center py-5">
+            <!-- Logo Part -->
+            <div class="flex justify-center items-center gap-2">
+                <img src="./images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+                <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+            </div>
+            <!-- Nav Menu -->
+            <div class="lg:block hidden">
+                <nav>
+                    <ul
+                        class="border-[1px] border-secondaryColor py-2 rounded-full flex px-6 gap-5 text-[1.2rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Buttons -->
+            <div class="text-[1.2rem] font-bold lg:block hidden">
+                <div class="flex gap-2">
+                    <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                        Login / Sign Up
+                    </button>
+                    <button class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger-icon" class="text-4xl font-bold lg:hidden md:block text-secondaryColor">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Small Screen Responsive Navbar -->
+        <div id="mobile-nav" class="hidden flex flex-col justify-center items-center">
+            <!-- Mobile Screen Nav Menu -->
+            <nav>
+                <ul
+                    class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-primaryColor">
+                    <li>
+                        <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pb-1 border-b-2 border-transparent hover:border-secondaryColor transition">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Screen Buttons -->
+            <div class="text-[1.2rem] font-bold">
+                <div class="flex gap-4">
+                    <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                        Login / Sign Up
+                    </button>
+                    <button class="border-2 border-secondaryColor py-2 px-3 rounded-full text-primaryColor">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End... -->
+     <!--- cards section start-->
+    <div class="container mx-auto">
+        <div>
+
+            <input type="text" size="121px" placeholder="🔎  Search All News And Media" class="border-gray-950 text-2xl p-2 mb-3 mt-3">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 ">
+            <div>
+                <img src="./images/1.jpg" alt="" class="p-2 py-2 w-4" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3" >How Does Massive MIMO Help Enable 5G?</p>
+                <p class="text-gray opacity-20 p-3">Aug 25,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/4.jpg" alt=""class="p-2 py-2 w-4 " style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Explore the Present and Future of AI</p>
+                <p class="text-gray opacity-20 p-3"> Aug 08, 2024</p>
+
+            </div>
+            <div >
+                <img src="./images/3.jpg" alt=""class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">The Benefits of VoNR</p>
+                <p class="text-gray opacity-20 p-3">June 27,2024</p>
+
+            </div>
+            <div>
+                <img src="./images/2.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">On-Device Generative AI – So What’s Next?</p>
+                &nbsp;
+
+                <p class="text-gray opacity-20 p-3">June 24,2024</p>
+
+            </div>
+           
+            
+            <div >
+                <img src="./images/6.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Qualcomm Academy Launches 5G Training Program with Purdue University</p>
+                <p class="text-gray opacity-20 p-3">May 20,2024</p>
+
+            </div>
+           
+
+           
+            <div >
+                <img src="./images/8.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Qualcomm Technologies Launches 5G Certification Program with Top San Diego Universities</p>
+                <p class="text-gray opacity-20 p-3">May 1,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/9.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Unlock Your Potential with Qualcomm Academy 5G Training Subscriptions</p>
+                &nbsp;
+
+                <p class="text-gray opacity-20 p-3">April 22,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/10.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">The Future of AI: Key Insights from the Qualcomm AI Summit 2023</p>
+                &nbsp;
+                <p class="text-gray opacity-20 p-3">April 20,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/11.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;" >
+                <p class="font-bold text-2xl p-3">Singapore Polytechnic and Qualcomm Technologies Bring Premier 5G Training to Singapore</p>
+                <p class="text-gray opacity-20 p-3">April 08,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/14.jpg" alt="" class="p-2 py-2 " style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">What is Open RAN and Why is it Important?</p>
+                <p class="text-gray opacity-20 p-3">April 03,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/13.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">5 Ways Generative AI Impacts Our Lives</p>
+                &nbsp;
+                 &nbsp;
+                <p class="text-gray opacity-20 p-3">March 21,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/12.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Standalone Mode vs. Non-Standalone Mode in 5G</p>
+                <p class="text-gray opacity-20 p-3">March 21,2024</p>
+
+            </div>
+            <div >
+                <img src="./images/15.jpg" alt="" class="p-2 py-2"  style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Timeline of Breakthrough Innovations in Generative AI</p>
+                <p class="text-gray opacity-20 p-3">Feb 21, 2024</p>
+
+            </div>
+            <div >
+                <img src="./images/5.jpg" alt="" class="p-2 py-2"  style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">Timeline of Breakthrough Innovations in Generative AI</p>
+                <p class="text-gray opacity-20 p-3">Feb 21, 2024</p>
+
+            </div>
+            <div >
+                <img src="./images/7.jpg" alt="" class="p-2 py-2"  style="height: 54%; width: 100%;">
+                <p class="font-bold text-2xl p-3">AI on the Edge: Discover Generative AI Research, Insights, and Trends</p>
+                <p class="text-gray opacity-20 p-3">Feb 21, 2024</p>
+
+            </div>
+
+        </div>    
+    </div>
+
+    
+</body>
+</html>
