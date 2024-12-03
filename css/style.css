@@ -1,0 +1,22 @@
+/* Logo Animation */
+
+.animated-logo {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: rgb(9, 9, 10);
+  background: radial-gradient(circle,
+      rgba(9, 9, 10, 1) 68%,
+      rgba(85, 29, 175, 1) 98%);
+}
