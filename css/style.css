@@ -1,0 +1,19 @@
+.brand-logos img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  /* Logo Animation */
+
+ .animated-logo {
+   animation: spin 3s linear infinite;
+  }
+
+     @keyframes spin {
+    from {
+        transform: rotate(0deg);
+       }
+        to {
+     transform: rotate(360deg);
+    }
+        }
