@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Home Section Start... -->
+    <section class="">
+        <div class="container-fluid  mx-auto flex justify-around items-center py-3 bg-heroBg">
+            <!-- Logo Part -->
+            <div class="flex justify-center items-center gap-2">
+                <img src="./Asset/images/logo.png" alt="Logo" class="animated-logo" height="70" width="70" />
+                <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+            </div>
+            <!-- Nav Menu -->
+            <div class="lg:block hidden">
+                <nav>
+                    <ul
+                        class="border-[1px] border-secondaryColor py-2 rounded-full flex px-6 gap-5 text-[1.2rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="index.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pricing.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html"
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Buttons -->
+            <div class="text-[1.2rem] font-bold lg:block hidden">
+                <div class="flex gap-2">
+                    <a href="login-signup.html">
+                        <button
+                            class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                            Login / Sign Up
+                        </button>
+                    </a>
+                    <a href="contact-us.html">
+                        <button
+                            class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                            Contact Us
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger-icon"
+                class="text-4xl font-bold lg:hidden md:block hover:cursor-pointer text-secondaryColor">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Small Screen Responsive Navbar -->
+        <div id="mobile-nav" class="hidden ">
+            <div class="flex flex-col justify-center items-center bg-heroBg">
+                <!-- Mobile Screen Nav Menu -->
+                <nav>
+                    <ul
+                        class="py-8 rounded-full flex flex-col justify-center items-center gap-5 text-[1.2rem] font-bold text-primaryColor">
+                        <li>
+                            <a href="index.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pricing.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html"
+                                class="pb-1 border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Screen Buttons -->
+                <div class="text-[1.2rem] font-bold">
+                    <div class="flex gap-4 mb-5">
+                        <a href="login-signup.html">
+                            <button
+                                class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                                Login / Sign Up
+                            </button>
+                        </a>
+
+                        <a href="contact-us.html">
+                            <button
+                                class="from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r py-2 px-3 rounded-full">
+                                Contact Us
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End... -->
+
+
+    <!--- Blog section start...-->
+    <section class="sec-bg">
+        <div class="container mx-auto p-5 ">
+            <div>
+                <input type="text" placeholder="🔎  Search All News And Media"
+                    class="border-gray-950 text-[1rem] p-2 mb-5 mt-5 w-full">
+            </div>
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div>
+                    <img src="./Asset/images/blog-1.jpg" alt="" class="p-2 py-2 w-4" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">How Does Massive MIMO Help Enable 5G?
+                    </p>
+                    <p class="text-white p-3 mb-2">Aug 25,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-2.jpg" alt="" class="p-2 py-2 w-4 " style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Explore the Present and Future of AI</p>
+                    <p class="text-white p-3 mb-2"> Aug 08, 2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-3.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">The Benefits of VoNR</p>
+                    <p class="text-white p-3 mb-2">June 27,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-4.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">On-Device Generative AI – So What’s
+                        Next?</p>
+                    &nbsp;
+
+                    <p class="text-white p-3 mb-2">June 24,2024</p>
+
+                </div>
+
+
+                <div>
+                    <img src="./Asset/images/blog-5.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Qualcomm Academy Launches 5G Training
+                        Program with
+                        Purdue
+                        University
+                    </p>
+                    <p class="text-white p-3 mb-2">May 20,2024</p>
+
+                </div>
+
+
+
+                <div>
+                    <img src="./Asset/images/blog-6.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Qualcomm Technologies Launches 5G
+                        Certification Program
+                        with Top
+                        San
+                        Diego Universities</p>
+                    <p class="text-white p-3 mb-2">May 1,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-7.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Unlock Your Potential with Qualcomm
+                        Academy 5G Training
+                        Subscriptions
+                    </p>
+                    &nbsp;
+
+                    <p class="text-white p-3 mb-2">April 22,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-8.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">The Future of AI: Key Insights from the
+                        Qualcomm AI
+                        Summit 2023
+                    </p>
+                    &nbsp;
+                    <p class="text-white p-3 mb-2">April 20,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-9.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Singapore Polytechnic and Qualcomm
+                        Technologies Bring
+                        Premier 5G
+                        Training to Singapore</p>
+                    <p class="text-white p-3 mb-2">April 08,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-10.jpg" alt="" class="p-2 py-2 " style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">What is Open RAN and Why is it
+                        Important?</p>
+                    <p class="text-white p-3 mb-2">April 03,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-11.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">5 Ways Generative AI Impacts Our Lives
+                    </p>
+                    &nbsp;
+                    &nbsp;
+                    <p class="text-white p-3 mb-2">March 21,2024</p>
+
+                </div>
+                <div>
+                    <img src="./Asset/images/blog-12.jpg" alt="" class="p-2 py-2" style="height: 54%; width: 100%;">
+                    <p class="font-bold text-[1rem] lg:text-2xl p-3 text-white">Standalone Mode vs. Non-Standalone Mode
+                        in 5G</p>
+                    <p class="text-white p-3 mb-2">March 21,2024</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- Blog section end...-->
+
+
+    <!-- Footer Section Start... -->
+    <section class="bg-heroBg mt-1">
+        <div class="container-fluid mx-auto p-10 ">
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-2">
+                    <div class="flex justify-center items-center gap-2 mb-2">
+                        <img src="./Asset/images/logo.png" alt="Logo" class="animated-logo" height="50" width="50" />
+                        <span class="text-secondaryColor text-4xl font-bold">Ai</span>
+                    </div>
+
+                    <div class="text-primaryColor mb-2">
+                        <p>It has long been known that a reader's
+                            attention will be diverted from</p>
+                    </div>
+                    <div>
+                        <p class="text-secondaryColor font-bold mb-2">Join a Newsletter</p>
+                        <div class="flex flex-col">
+                            <input type="email" name="" id=""
+                                class="p-2 rounded-full border-2 border-secondaryColor  outline-none mb-2">
+                            <button
+                                class="bg-white text-purple-600 font-medium py-2 px-4 md:px-6 rounded-lg hover:bg-purple-600 hover:text-white transition duration-300"
+                                type="submit">
+                                Submit
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Quick Links</p>
+                    <div>
+                        <ul
+                            class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                            <li>
+                                <a href="index.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blogs.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html"
+                                    class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor text-[1.2rem] font-semibold mb-2">Services</p>
+                    <ul
+                        class="py-1 flex flex-col justify-center items-start gap-3 text-[1rem] font-bold text-primaryColor">
+                        <li>
+                            <span
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Image Generator
+                            </span>
+                        </li>
+                        <li>
+                            <span
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Text Generator
+                            </span>
+                        </li>
+                        <li>
+                            <span
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Code Generator
+                            </span>
+                        </li>
+                        <li>
+                            <span
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Video Generator
+                            </span>
+                        </li>
+                        <li>
+                            <span
+                                class="pb-[2px] border-b-2 border-transparent hover:border-secondaryColor hover:text-secondaryColor transition">
+                                Education Feedback
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-left text-secondaryColor hover:text-secondaryColor text-[1.2rem] font-semibold mb-2">
+                        Contact Us
+                    </p>
+                    <div class="">
+                        <!-- Address -->
+                        <div
+                            class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                            <i class="fa-solid fa-location-dot mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                KPHB-500072, Hyderabad, IND
+                            </p>
+                        </div>
+                        <!-- Email -->
+                        <div
+                            class="flex flex-col sm:flex-row justify-start items-start gap-4 mb-2 text-secondaryColor py-1">
+                            <i class="fa-solid fa-envelope mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                domain@gmail.com
+                            </p>
+                        </div>
+                        <!-- Phone -->
+                        <div class="flex flex-col sm:flex-row justify-start items-start gap-4 text-secondaryColor py-1">
+                            <i class="fa-solid fa-phone mt-2"></i>
+                            <p class="text-primaryColor text-center sm:text-left">
+                                +91 12345 67890
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer Section End... -->
+
+    <!-- SCript file -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
