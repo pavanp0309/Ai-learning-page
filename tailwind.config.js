@@ -11,6 +11,21 @@ module.exports = {
     },
     extend: {
       // additional custom styles if required
+      width: {
+        '3/10': '30%',
+        '5/10': '50%',
+      },
+      colors: {
+        heroBg: "#0D0D16", // Custom color for hero background
+        primaryColor: "#9A999E",
+        secondaryColor: "#522699",
+        starColor: "#FFDF00",
+      },
+      fontFamily: {
+        bodyFont:['Dancing']
+      }
+      
+
     },
   },
   plugins: [],
