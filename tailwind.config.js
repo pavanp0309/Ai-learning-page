@@ -11,7 +11,6 @@ module.exports = {
     },
     extend: {
       // additional custom styles if required
-      
     },
   },
   plugins: [],
